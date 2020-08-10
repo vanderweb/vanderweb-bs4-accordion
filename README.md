@@ -1,12 +1,12 @@
 # Bootstrap 4 Accordions and Tabs by Vander Web
-Contributors: Ulrik Vander
-Tags: Bootstrap 4, Font Awesome 4.7, Accordions, Tabs
-Requires at least: 5.4
-Tested up to: 5.4.2
-Stable tag: 5.4.2
-Requires PHP: 7.2
-License: GPLv2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* Contributors: Ulrik Vander
+* Tags: Bootstrap 4, Font Awesome 4.7, Accordions, Tabs
+* Requires at least: 5.4
+* Tested up to: 5.4.2
+* Stable tag: 5.4.2
+* Requires PHP: 7.2
+* License: GPLv2
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Add Accordions Section and Shortcodes
 

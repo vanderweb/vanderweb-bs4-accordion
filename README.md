@@ -26,5 +26,4 @@ Best is to install directly from WordPress. If manual installation is required, 
 
 ## Changelog
 
-= 1.0.0 =
-* First release.
+* 1.0.0: First release.

@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: ulrikvander
 Donate link: https://vander-web.com/
 Tags: accordion, post_type, taxonomy, options, Bootstrap 4.6, Bootstrap Icons
 Requires at least: 5.5.0

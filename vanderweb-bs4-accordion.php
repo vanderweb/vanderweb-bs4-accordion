@@ -13,8 +13,7 @@
  * @package           Vanderweb_Bs4_Accordion
  *
  * @wordpress-plugin
- * Plugin Name:       Bootstrap 4 Accordions and Tabs by Vander Web
- * Plugin URI:        https://vander-web.com/
+ * Plugin Name:       Accordions and Tabs by Vander Web
  * Description:       Add Accordions Section and Shortcodes.
  * Version:           1.0.1
  * Author:            Ulrik Vander

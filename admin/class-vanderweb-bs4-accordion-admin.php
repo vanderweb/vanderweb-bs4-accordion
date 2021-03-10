@@ -190,23 +190,25 @@ class Vanderweb_Bs4_Accordion_Admin {
 
 	public function vanderweb_accordions_shortcodes_section_info() {
 		?>
-		<p><?= __( 'These Shortcodes require that Bootstrap 4.6 and Bootstrap Icons 1.2 is loaded to work.', 'vanderweb-bs4-accordion' ); ?></p>
-		<p><?= __( 'If your current theme loads Bootstrap 4.6 and Bootstrap Icons 1.2, then set options to "No".', 'vanderweb-bs4-accordion' ); ?></p>
-		<p><?= __( 'Otherwise change the settings to load from this plugin.', 'vanderweb-bs4-accordion' ); ?></p>
+		<p><?php echo __( 'These Shortcodes require that Bootstrap 4.6 and Bootstrap Icons 1.2 is loaded to work.', 'vanderweb-bs4-accordion' ); ?></p>
+		<p><?php echo __( 'If your current theme loads Bootstrap 4.6 and Bootstrap Icons 1.2, then set options to "No".', 'vanderweb-bs4-accordion' ); ?></p>
+		<p><?php echo __( 'Otherwise change the settings to load from this plugin.', 'vanderweb-bs4-accordion' ); ?></p>
 		<?php
 	}
 
 	public function load_bootstrap_4_6_from_the_plugin_0_callback() {
 		?> <fieldset><?php $checked = ( $this->vanderweb_accordions_shortcodes_options['load_bootstrap_4_6_from_the_plugin_0'] === 'true' ) ? 'checked' : '' ; ?>
-		<label for="load_bootstrap_4_6_from_the_plugin_0-0"><input type="radio" name="vanderweb_accordions_shortcodes_option_name[load_bootstrap_4_6_from_the_plugin_0]" id="load_bootstrap_4_6_from_the_plugin_0-0" value="true" <?php echo $checked; ?>> <?= __('Yes', 'vanderweb-bs4-accordion'); ?></label><br>
+		<label for="load_bootstrap_4_6_from_the_plugin_0-0"><input type="radio" name="vanderweb_accordions_shortcodes_option_name[load_bootstrap_4_6_from_the_plugin_0]" id="load_bootstrap_4_6_from_the_plugin_0-0" value="true" <?php echo $checked; ?>> <?php echo __('Yes', 'vanderweb-bs4-accordion'); ?></label><br>
 		<?php $checked = ( isset( $this->vanderweb_accordions_shortcodes_options['load_bootstrap_4_6_from_the_plugin_0'] ) && $this->vanderweb_accordions_shortcodes_options['load_bootstrap_4_6_from_the_plugin_0'] === 'false' ) ? 'checked' : '' ; ?>
-		<label for="load_bootstrap_4_6_from_the_plugin_0-1"><input type="radio" name="vanderweb_accordions_shortcodes_option_name[load_bootstrap_4_6_from_the_plugin_0]" id="load_bootstrap_4_6_from_the_plugin_0-1" value="false" <?php echo $checked; ?>> <?= __('No, load Bootstrap 4.6 from your theme', 'vanderweb-bs4-accordion'); ?></label></fieldset> <?php
+		<label for="load_bootstrap_4_6_from_the_plugin_0-1"><input type="radio" name="vanderweb_accordions_shortcodes_option_name[load_bootstrap_4_6_from_the_plugin_0]" id="load_bootstrap_4_6_from_the_plugin_0-1" value="false" <?php echo $checked; ?>> <?php echo __('No, load Bootstrap 4.6 from your theme', 'vanderweb-bs4-accordion'); ?></label></fieldset> 
+		<?php
 	}
 
 	public function load_bootstrap_icons_1_2_from_the_plugin_1_callback() {
 		?> <fieldset><?php $checked = ( $this->vanderweb_accordions_shortcodes_options['load_bootstrap_icons_1_2_from_the_plugin_1'] === 'true' ) ? 'checked' : '' ; ?>
-		<label for="load_bootstrap_icons_1_2_from_the_plugin_1-0"><input type="radio" name="vanderweb_accordions_shortcodes_option_name[load_bootstrap_icons_1_2_from_the_plugin_1]" id="load_bootstrap_icons_1_2_from_the_plugin_1-0" value="true" <?php echo $checked; ?>> <?= __('Yes', 'vanderweb-bs4-accordion'); ?></label><br>
+		<label for="load_bootstrap_icons_1_2_from_the_plugin_1-0"><input type="radio" name="vanderweb_accordions_shortcodes_option_name[load_bootstrap_icons_1_2_from_the_plugin_1]" id="load_bootstrap_icons_1_2_from_the_plugin_1-0" value="true" <?php echo $checked; ?>> <?php echo __('Yes', 'vanderweb-bs4-accordion'); ?></label><br>
 		<?php $checked = ( isset( $this->vanderweb_accordions_shortcodes_options['load_bootstrap_icons_1_2_from_the_plugin_1'] ) && $this->vanderweb_accordions_shortcodes_options['load_bootstrap_icons_1_2_from_the_plugin_1'] === 'false' ) ? 'checked' : '' ; ?>
-		<label for="load_bootstrap_icons_1_2_from_the_plugin_1-1"><input type="radio" name="vanderweb_accordions_shortcodes_option_name[load_bootstrap_icons_1_2_from_the_plugin_1]" id="load_bootstrap_icons_1_2_from_the_plugin_1-1" value="false" <?php echo $checked; ?>> <?= __('No, load Bootstrap Icons 1.2 from your theme', 'vanderweb-bs4-accordion'); ?></label></fieldset> <?php
+		<label for="load_bootstrap_icons_1_2_from_the_plugin_1-1"><input type="radio" name="vanderweb_accordions_shortcodes_option_name[load_bootstrap_icons_1_2_from_the_plugin_1]" id="load_bootstrap_icons_1_2_from_the_plugin_1-1" value="false" <?php echo $checked; ?>> <?php echo __('No, load Bootstrap Icons 1.2 from your theme', 'vanderweb-bs4-accordion'); ?></label></fieldset> 
+		<?php
 	}
 }

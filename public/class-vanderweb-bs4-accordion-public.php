@@ -79,10 +79,10 @@ class Vanderweb_Bs4_Accordion_Public {
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/vanderweb-bs4-accordion-public.css', array(), $this->version, 'all' );
 
 		if($load_bootstrap_4_6_from_the_plugin_0 == 'true'):
-			wp_enqueue_style( 'bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css', array(), null);
+			wp_enqueue_style('bootstrap4', plugin_dir_url( __FILE__ ) . 'css/bootstrap.min.css', array(), '4.6', 'all' );		
 		endif;
 		if($load_bootstrap_icons_1_2_from_the_plugin_1 == 'true'):
-			wp_enqueue_style( 'bootstrap-icons', '//cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css', array(), null);
+			wp_enqueue_style('bootstrap-icons', plugin_dir_url( __FILE__ ) . 'css/bootstrap-icons/bootstrap-icons.css', array(), '1.3', 'all' );
 		endif;
 	}
 
@@ -93,7 +93,7 @@ class Vanderweb_Bs4_Accordion_Public {
 	 */
 	public function enqueue_scripts() {
 
-		/**
+		/** 
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
@@ -109,13 +109,8 @@ class Vanderweb_Bs4_Accordion_Public {
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/vanderweb-bs4-accordion-public.js', array( 'jquery' ), $this->version, false );
 		
-		if($load_bootstrap_4_6_from_the_plugin_0['load_bootstrap_4_6_from_the_plugin_0'] == 'true'):
-			wp_register_script( 'popper_js', '//cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', array('jquery'), null );
-			wp_enqueue_script('popper_js');
-			wp_script_add_data( 'popper_js', array( 'integrity', 'crossorigin' ) , array( 'sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN', 'anonymous' ) );
-			wp_register_script('Bootstrap4', '//cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js', array('jquery'), null );
-			wp_enqueue_script('Bootstrap4');
-			wp_script_add_data( 'Bootstrap4', array( 'integrity', 'crossorigin' ) , array( 'sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF', 'anonymous' ) );
+		if($load_bootstrap_4_6_from_the_plugin_0 == 'true'):
+			wp_enqueue_script( 'Bootstrap4', plugin_dir_url( __FILE__ ) . 'js/bootstrap.bundle.min.js', array( 'jquery' ), '4.6', false );
 		endif;
 	}
 	

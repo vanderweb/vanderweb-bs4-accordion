@@ -33,13 +33,13 @@
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
 <div class="wrap">
-    <h2><?= __( 'Accordions - Shortcodes', 'vanderweb-bs4-accordion' ); ?></h2>
+    <h2><?php echo __( 'Accordions - Shortcodes', 'vanderweb-bs4-accordion' ); ?></h2>
 	<p></p>
 	<?php settings_errors(); ?>
 	<hr />
-	<h3><?= __( 'Accordions:', 'vanderweb-bs4-accordion' ); ?></h3>
-	<p><?= $accordions; ?></p>
-	<p><b><?= __( 'Shortcode attributes:', 'vanderweb-bs4-accordion' ); ?></b></p>
+	<h3><?php echo __( 'Accordions:', 'vanderweb-bs4-accordion' ); ?></h3>
+	<p><?php echo $accordions; ?></p>
+	<p><b><?php echo __( 'Shortcode attributes:', 'vanderweb-bs4-accordion' ); ?></b></p>
 	<p>slug="<i>your-section-slug</i>"</p>
 	<p>class=""</p>
 	<p>count="50"</p>
@@ -48,9 +48,9 @@
 	<p>open="first" <br />( first, all, none )</p>
 	<p>icons="right" <br />( right, left, none )</p>
 	<hr />
-	<h3><?= __( 'Tabs:', 'vanderweb-bs4-accordion' ); ?></h3>
-	<p><?= $tabs; ?></p>
-	<p><b><?= __( 'Shortcode attributes:', 'vanderweb-bs4-accordion' ); ?></b></p>
+	<h3><?php echo __( 'Tabs:', 'vanderweb-bs4-accordion' ); ?></h3>
+	<p><?php echo $tabs; ?></p>
+	<p><b><?php echo __( 'Shortcode attributes:', 'vanderweb-bs4-accordion' ); ?></b></p>
 	<p>slug="<i>your-section-slug</i>"</p>
 	<p>class=""</p>
 	<p>count="50"</p>
